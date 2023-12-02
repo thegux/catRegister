@@ -1,38 +1,119 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background: #F7F6F3;
   min-height: 100vh;
+}
+
+.App img {
+  border-radius: 8px;
+  max-height: 400px;
+  max-width: 90%;
+}
+
+.App .mainButton {
+  color: white;
+  border: 2px solid darkred;
+  background: darkred;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.App button:hover {
+  filter: opacity(0.8);
+  transform: 0.3s;
+}
+
+.App .initRegister {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.initRegister h1 {
+  border-top: 4px solid darkred;
+  padding-top: 2rem;
+  width: 100%;
+  margin: 4rem 0 2rem;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loggedApp {
+  min-height: 100vh;
+}
+
+.loggedApp h1 {
+  padding: 2rem;
+  margin: 0;
+}
+
+.loggedApp .tabMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabMenu .tab {
+  flex: 4;
+  border: none;
+  background: white;
+  border-bottom: 1px solid lightgray;
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.tabMenu .tab--active {
+  border-bottom: 2px solid darkgray;
+  font-weight: 600;
+}
+
+.tabMenu .logout {
+  color: darkred;
+  border: none;
+  border-bottom: 2px solid darkred;
+  background: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.tabContainer {
+  padding: 1rem 2rem 2rem;
+}
+
+.tabContainer h2 {
+  font-weight: 500;
+}
+
+.tabContainer form {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.tabContainer label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.tabContainer .successMessage {
+  color: darkgreen;
+  margin-top: 1rem;
+}
+
+.catLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid darkgray;
 }
