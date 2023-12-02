@@ -72,7 +72,7 @@ function App() {
                   <form onSubmit={registerForm}>
                       <label for="mes">
                           Mês
-                          <select value={filterMonth} name="mes">
+                          <select name="mes">
                               <option>Janeiro</option>
                               <option>Fevereiro</option>
                               <option>Março</option>
